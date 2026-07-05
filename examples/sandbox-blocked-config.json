@@ -1,0 +1,25 @@
+{
+  "agents": {
+    "defaults": {
+      "sandbox": {
+        "mode": "all"
+      }
+    }
+  },
+  "mcp": {
+    "servers": {
+      "filesystem": {
+        "command": "node",
+        "args": ["-e", "setInterval(() => {}, 1000)"],
+        "env": {}
+      }
+    }
+  },
+  "tools": {
+    "sandbox": {
+      "tools": {
+        "alsoAllow": []
+      }
+    }
+  }
+}

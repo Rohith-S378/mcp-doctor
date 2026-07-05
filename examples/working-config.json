@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "idle-stdio-server": {
+  "command": "node",
+  "args": ["-e", "setInterval(() => {}, 1000)"],
+  "env": {}
+},
+    "clean-exit-server": {
+      "command": "node",
+      "args": ["-e", "process.exit(0)"],
+      "env": {}
+    }
+  }
+}

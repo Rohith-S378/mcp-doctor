@@ -1,0 +1,26 @@
+{
+  "name": "mcp-doctor",
+  "version": "0.1.0",
+  "description": "Diagnoses broken MCP (Model Context Protocol) server configs across OpenClaw, Claude Desktop, and Cursor.",
+  "main": "index.js",
+  "bin": {
+    "mcp-doctor": "./index.js"
+  },
+  "scripts": {
+    "test:broken": "node index.js check ./examples/broken-config.json",
+    "test:working": "node index.js check ./examples/working-config.json"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "openclaw",
+    "claude",
+    "cursor",
+    "cli",
+    "diagnostics"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "mcp": {
+    "servers": {
+      "nonexistent-binary": {
+        "command": "this-binary-does-not-exist-xyz",
+        "args": [],
+        "env": {}
+      },
+      "missing-api-key": {
+        "command": "node",
+        "args": ["-e", "console.log(process.env.SOME_FAKE_API_KEY); setInterval(()=>{}, 1000)"],
+        "env": {
+          "SOME_FAKE_API_KEY": "${SOME_FAKE_API_KEY}"
+        }
+      },
+      "crashes-immediately": {
+        "command": "node",
+        "args": ["-e", "console.error('fatal: bad config'); process.exit(1)"],
+        "env": {}
+      }
+    }
+  }
+}
