@@ -98,9 +98,9 @@ Requires Node.js 16+. Zero external dependencies.
 
 ## Roadmap
 
-- [ ] Detect the "server started fine but its tools are invisible" sandbox
+- [✓] Detect the "server started fine but its tools are invisible" sandbox
       allowlist gap (OpenClaw-specific, but a common failure category)
-- [ ] `--fix` flag to auto-resolve easy cases (e.g. rewrite `"command": "npx"`
+- [✓] `--fix` flag to auto-resolve easy cases (e.g. rewrite `"command": "npx"`
       to its full resolved path)
 - [ ] Publish to npm so `npx mcp-doctor check <config>` works with zero clone
 - [ ] Optional JSON output mode for piping into other tools
